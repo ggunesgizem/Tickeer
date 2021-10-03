@@ -1,1 +1,0 @@
-../../../../../node_modules/@react-native-firebase/admob/ios/RNFBAdMob/RNFBAdMobConsentModule.h

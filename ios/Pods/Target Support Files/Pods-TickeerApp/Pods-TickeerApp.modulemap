@@ -1,0 +1,6 @@
+module Pods_TickeerApp {
+  umbrella header "Pods-TickeerApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

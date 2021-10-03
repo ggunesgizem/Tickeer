@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "433796592170",
+    "project_id": "tickeerapp-ca598",
+    "storage_bucket": "tickeerapp-ca598.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433796592170:android:427639f077769e49d58953",
+        "android_client_info": {
+          "package_name": "com.tickeer.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433796592170-umkgqft264io3m4rj78umpshaag4uldp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuff2-4mTg067Ma0tGh7-F-Ih3Os9iRqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433796592170-umkgqft264io3m4rj78umpshaag4uldp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "433796592170-dks04j9jlpv926unm2trjpvrsi5qn0ln.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tickeer.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

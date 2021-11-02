@@ -59,9 +59,9 @@ const EditCalorieCounterTracker: React.FC<
           defaultValue={calorieCounterData.calorie ?? ''}
           inputLabel="kcal"
           style={layoutStyles.marginTopSmall}
-          keyboardType={'number-pad'}
+          keyboardType={'decimal-pad'}
           onChangeText={(text) => {
-            editCalorieCounterData.current.calorie = parseInt(text ?? 0, 10);
+            editCalorieCounterData.current.calorie = parseFloat(text ?? 0, 10);
           }}
         />
         <View

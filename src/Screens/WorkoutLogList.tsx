@@ -1,24 +1,32 @@
-import React, {useEffect, useState} from 'react';
-import {FlatList, View} from 'react-native';
-import {DefaultNavigationProps} from '~/Navigator/NavigatorTypes';
+import React, { useEffect, useState } from 'react';
+import {Alert, FlatList, View } from 'react-native';
+import { DefaultNavigationProps } from '~/Navigator/NavigatorTypes';
 import Container from '~/Components/Container';
-import {getWorkoutLog} from '~/Helpers/AsyncStorageHelper';
-import {hideHud, showHud} from '~/Hud/HudHelper';
-import {getWorkoutLabel, WorkoutLogType} from '~/Helpers/WorkoutHelper';
+import { getWorkoutLog } from '~/Helpers/AsyncStorageHelper';
+import { hideHud, showHud } from '~/Hud/HudHelper';
+import { getWorkoutLabel, WorkoutLogType } from '~/Helpers/WorkoutHelper';
 import Card from '~/Components/Card';
-import {Text} from '@ui-kitten/components/ui';
-import {useStyle} from '~/Theme/ThemeHelper';
-import {useTranslation} from 'react-i18next';
+import IconType from '~/Styles/IconType';
+import IconButton from '~/Components/IconButton';
+import { Text } from '@ui-kitten/components/ui';
+import { useStyle } from '~/Theme/ThemeHelper';
+import { ThemeKeys } from '~/Theme/ThemeKeys';
+import { useTranslation } from 'react-i18next';
 import Router from '~/Navigator/Router';
-import {LangKeys} from '~/Locale/LangKeys';
+import { LangKeys } from '~/Locale/LangKeys';
+import {
+  removeMultiDataFromStorage,
+  StorageKeys,
+  getItemFromStorage,
+} from '~/Helpers/AsyncStorageHelper';
 
 const WorkoutLogList: React.FC<
   DefaultNavigationProps<'WorkoutLogList'>
 > = () => {
   const [logList, setLogList] = useState<WorkoutLogType[]>();
-  const {t} = useTranslation();
-  const {layoutStyles} = useStyle();
-  const _renderItem = ({item}: {item: WorkoutLogType; index: number}) => {
+  const { t } = useTranslation();
+  const { layoutStyles, themeVariables } = useStyle();
+  const _renderItem = ({ item }: { item: WorkoutLogType; index: number }) => {
     return (
       <Card
         style={layoutStyles.marginTopBase}
@@ -48,6 +56,24 @@ const WorkoutLogList: React.FC<
       })
       .finally(hideHud);
   }, []);
+
+  const handleResetPress = () => {
+    Alert.alert(t(LangKeys.warning), t(LangKeys.reset_worklog_alert), [
+      {
+        text: t(LangKeys.ok),
+        onPress: () =>
+          removeMultiDataFromStorage([
+            StorageKeys.WORKOUT_LOG,
+          ]).finally(() => {
+             Router.Pop();
+          }),
+      },
+      {
+        text: t(LangKeys.cancel),
+      },
+    ]);
+  };
+
   return (
     <Container>
       <FlatList
@@ -70,6 +96,13 @@ const WorkoutLogList: React.FC<
             </Text>
           </View>
         )}
+      />
+      <IconButton
+        style={[layoutStyles.marginTopBase, layoutStyles.justifyCenter]}
+        icon={IconType.Trash}
+         onPress={handleResetPress}
+        label={t(LangKeys.reset_worklog)}
+        color={themeVariables.eva[ThemeKeys.colorWhite]}
       />
     </Container>
   );

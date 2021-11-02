@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:TickeerApp.xcodeproj">
+      location = "group:/Users/ali-g/Desktop/Ali-G/tickeerapp-master/ios/TickeerApp.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TickeerApp.xcodeproj">
    </FileRef>
 </Workspace>

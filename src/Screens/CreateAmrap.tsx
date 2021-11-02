@@ -126,10 +126,10 @@ const CreateAmrap = React.forwardRef(
                 secondPickerSelected={workoutList[_index].minute}
                 secondSelectedLabel={secondToTime(workoutList[_index].minute)}
                 onFirstSelectedChange={(selectedVal) => {
-                  updateRestList(selectedVal, _index);
+                  updateRestList(selectedVal, _index);   
                 }}
                 onSecondSelectedChange={(selectedVal) => {
-                  updateWorkoutList(selectedVal, _index);                 
+                  updateWorkoutList(selectedVal, _index);
                 }}
                 onDeletePress={() => {
                   deleteFromWorkoutList(_index);

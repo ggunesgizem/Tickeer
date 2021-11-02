@@ -129,7 +129,7 @@ const EditBodySizeTracker: React.FC<
           style={layoutStyles.marginTopSmall}
           keyboardType={'decimal-pad'}
           onChangeText={(text) => {
-            editBodySizeData.current.neck = parseInt(text ?? 0, 10);
+            editBodySizeData.current.neck = parseFloat(text);
           }}
         />
         <Input
@@ -138,16 +138,16 @@ const EditBodySizeTracker: React.FC<
           style={layoutStyles.marginTopSmall}
           keyboardType={'decimal-pad'}
           onChangeText={(text) => {
-            editBodySizeData.current.waist = parseInt(text ?? 0, 10);
+            editBodySizeData.current.waist = parseFloat(text);
           }}
         />
         <Input
           defaultValue={bodySizeData.hip ?? ''}
           inputLabel={t(LangKeys.hip, {metric: heightMetric})}
           style={layoutStyles.marginTopSmall}
-          keyboardType={'number-pad'}
+          keyboardType={'decimal-pad'}
           onChangeText={(text) => {
-            editBodySizeData.current.hip = parseInt(text ?? 0, 10);
+            editBodySizeData.current.hip = parseFloat(text);
           }}
         />
         <View

@@ -67,135 +67,135 @@ const EditHeroWodTracker: React.FC<
             defaultValue={heroWodData.amanda ?? ''}
             inputLabel={t(LangKeys.amanda)}
             style={layoutStyles.marginTopSmall}
-            keyboardType={'number-pad'}
+            keyboardType={'decimal-pad'}
             onChangeText={(text) => {
-              editHeroWodData.current.amanda = parseInt(text ?? 0, 10);
+              editHeroWodData.current.amanda = parseFloat(text);
             }}
           />
           <Input
             defaultValue={heroWodData.barbara ?? ''}
             inputLabel={t(LangKeys.barbara)}
             style={layoutStyles.marginTopSmall}
-            keyboardType={'number-pad'}
+            keyboardType={'decimal-pad'}
             onChangeText={(text) => {
-              editHeroWodData.current.barbara = parseInt(text ?? 0, 10);
+              editHeroWodData.current.barbara = parseFloat(text);
             }}
           />
           <Input
             defaultValue={heroWodData.chelsea ?? ''}
             inputLabel={t(LangKeys.chelsea)}
             style={layoutStyles.marginTopSmall}
-            keyboardType={'number-pad'}
+            keyboardType={'decimal-pad'}
             onChangeText={(text) => {
-              editHeroWodData.current.chelsea = parseInt(text ?? 0, 10);
+              editHeroWodData.current.chelsea = parseFloat(text);
             }}
           />
           <Input
             defaultValue={heroWodData.cindy ?? ''}
             inputLabel={t(LangKeys.cindy)}
             style={layoutStyles.marginTopSmall}
-            keyboardType={'number-pad'}
+            keyboardType={'decimal-pad'}
             onChangeText={(text) => {
-              editHeroWodData.current.cindy = parseInt(text ?? 0, 10);
+              editHeroWodData.current.cindy = parseFloat(text);
             }}
           />
           <Input
             defaultValue={heroWodData.diane ?? ''}
             inputLabel={t(LangKeys.diane)}
             style={layoutStyles.marginTopSmall}
-            keyboardType={'number-pad'}
+            keyboardType={'decimal-pad'}
             onChangeText={(text) => {
-              editHeroWodData.current.diane = parseInt(text ?? 0, 10);
+              editHeroWodData.current.diane = parseFloat(text);
             }}
           />
           <Input
             defaultValue={heroWodData.elizabeth ?? ''}
             inputLabel={t(LangKeys.elizabeth)}
             style={layoutStyles.marginTopSmall}
-            keyboardType={'number-pad'}
+            keyboardType={'decimal-pad'}
             onChangeText={(text) => {
-              editHeroWodData.current.elizabeth = parseInt(text ?? 0, 10);
+              editHeroWodData.current.elizabeth = parseFloat(text);
             }}
           />
           <Input
             defaultValue={heroWodData.fran ?? ''}
             inputLabel={t(LangKeys.fran)}
             style={layoutStyles.marginTopSmall}
-            keyboardType={'number-pad'}
+            keyboardType={'decimal-pad'}
             onChangeText={(text) => {
-              editHeroWodData.current.fran = parseInt(text ?? 0, 10);
+              editHeroWodData.current.fran = parseFloat(text);
             }}
           />
           <Input
             defaultValue={heroWodData.grace ?? ''}
             inputLabel={t(LangKeys.grace)}
             style={layoutStyles.marginTopSmall}
-            keyboardType={'number-pad'}
+            keyboardType={'decimal-pad'}
             onChangeText={(text) => {
-              editHeroWodData.current.grace = parseInt(text ?? 0, 10);
+              editHeroWodData.current.grace = parseFloat(text);
             }}
           />
           <Input
             defaultValue={heroWodData.isabel ?? ''}
             inputLabel={t(LangKeys.isabel)}
             style={layoutStyles.marginTopSmall}
-            keyboardType={'number-pad'}
+            keyboardType={'decimal-pad'}
             onChangeText={(text) => {
-              editHeroWodData.current.isabel = parseInt(text ?? 0, 10);
+              editHeroWodData.current.isabel = parseFloat(text);
             }}
           />
           <Input
             defaultValue={heroWodData.jackie ?? ''}
             inputLabel={t(LangKeys.jackie)}
             style={layoutStyles.marginTopSmall}
-            keyboardType={'number-pad'}
+            keyboardType={'decimal-pad'}
             onChangeText={(text) => {
-              editHeroWodData.current.jackie = parseInt(text ?? 0, 10);
+              editHeroWodData.current.jackie = parseFloat(text);
             }}
           />
           <Input
             defaultValue={heroWodData.karen ?? ''}
             inputLabel={t(LangKeys.karen)}
             style={layoutStyles.marginTopSmall}
-            keyboardType={'number-pad'}
+            keyboardType={'decimal-pad'}
             onChangeText={(text) => {
-              editHeroWodData.current.karen = parseInt(text ?? 0, 10);
+              editHeroWodData.current.karen = parseFloat(text);
             }}
           />
           <Input
             defaultValue={heroWodData.kelly ?? ''}
             inputLabel={t(LangKeys.kelly)}
             style={layoutStyles.marginTopSmall}
-            keyboardType={'number-pad'}
+            keyboardType={'decimal-pad'}
             onChangeText={(text) => {
-              editHeroWodData.current.kelly = parseInt(text ?? 0, 10);
+              editHeroWodData.current.kelly = parseFloat(text);
             }}
           />
           <Input
             defaultValue={heroWodData.mary ?? ''}
             inputLabel={t(LangKeys.mary)}
             style={layoutStyles.marginTopSmall}
-            keyboardType={'number-pad'}
+            keyboardType={'decimal-pad'}
             onChangeText={(text) => {
-              editHeroWodData.current.mary = parseInt(text ?? 0, 10);
+              editHeroWodData.current.mary = parseFloat(text);
             }}
           />
           <Input
             defaultValue={heroWodData.murph ?? ''}
             inputLabel={t(LangKeys.murph)}
             style={layoutStyles.marginTopSmall}
-            keyboardType={'number-pad'}
+            keyboardType={'decimal-pad'}
             onChangeText={(text) => {
-              editHeroWodData.current.murph = parseInt(text ?? 0, 10);
+              editHeroWodData.current.murph = parseFloat(text);
             }}
           />
           <Input
             defaultValue={heroWodData.nancy ?? ''}
             inputLabel={t(LangKeys.nancy)}
             style={layoutStyles.marginTopSmall}
-            keyboardType={'number-pad'}
+            keyboardType={'decimal-pad'}
             onChangeText={(text) => {
-              editHeroWodData.current.nancy = parseInt(text ?? 0, 10);
+              editHeroWodData.current.nancy = parseFloat(text);
             }}
           />
           <View
